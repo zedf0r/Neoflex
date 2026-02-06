@@ -5,3 +5,5 @@ export { TelegramIcon } from "./TelegramIcon";
 export { VkIcon } from "./VkIcon";
 export { WhatsappIcon } from "./WhatsappIcon";
 export { StarIcon } from "./StarIcon";
+export { MinusIcon } from "./MinusIcon";
+export { PlusIcon } from "./PlusIcon";

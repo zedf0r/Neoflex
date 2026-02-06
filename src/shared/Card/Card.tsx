@@ -1,13 +1,6 @@
 import { StarIcon } from "@/assets/icons";
 import style from "./Card.module.scss";
-
-type TypeCardProps = {
-  img: string;
-  title: string;
-  price: number;
-  oldPrice?: number;
-  rate: number;
-};
+import type { TypeCardProps } from "@/types/card.type";
 
 export const Card = ({ card }: { card: TypeCardProps }) => {
   return (
@@ -19,9 +12,13 @@ export const Card = ({ card }: { card: TypeCardProps }) => {
         <div className={style.card__header}>
           <p className={style.card__title}>{card.title}</p>
           <div className={style.card__price}>
-            <span className={style.card__price_new}>{card.price} ₽</span>
+            <span className={style.card__price_new}>
+              {card.price.toLocaleString()} ₽
+            </span>
             {card.oldPrice && (
-              <span className={style.card__price_old}>{card.oldPrice} ₽</span>
+              <span className={style.card__price_old}>
+                {card.oldPrice.toLocaleString()} ₽
+              </span>
             )}
           </div>
         </div>
