@@ -12,7 +12,9 @@ type TypeCardProps = {
 export const Card = ({ card }: { card: TypeCardProps }) => {
   return (
     <article className={style.card}>
-      <img className={style.card__img} src={card.img} alt={card.title} />
+      <div className={style.card__img}>
+        <img src={card.img} alt={card.title} />
+      </div>
       <div className={style.card__info}>
         <div className={style.card__header}>
           <p className={style.card__title}>{card.title}</p>

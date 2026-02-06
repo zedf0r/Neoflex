@@ -1,5 +1,8 @@
 .catalog {
   padding: 28px 0 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
 
   .catalog__title {
     font-weight: 600;
