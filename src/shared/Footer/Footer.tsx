@@ -83,11 +83,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className={style.footer__socials}>
-        <a
-          href="#"
-          aria-label="Vk"
-          className={clsx(style.social, style.social__vk)}
-        >
+        <a href="#" aria-label="Vk" className={style.social}>
           <VkIcon />
         </a>
         <a href="#" aria-label="Telegram" className={style.social}>
