@@ -3,4 +3,9 @@
   color: var(--primaryColor);
   font-weight: 700;
   font-size: 25px;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: var(--grayColor);
+  }
 }

@@ -83,13 +83,25 @@ export const Footer = () => {
         </div>
       </div>
       <div className={style.footer__socials}>
-        <a href="#" aria-label="Vk" className={style.social}>
+        <a
+          href="https://vk.com/neoflex_ru"
+          aria-label="Vk"
+          className={style.social}
+        >
           <VkIcon />
         </a>
-        <a href="#" aria-label="Telegram" className={style.social}>
+        <a
+          href="https://t.me/neoflexlive"
+          aria-label="Telegram"
+          className={style.social}
+        >
           <TelegramIcon />
         </a>
-        <a href="#" aria-label="Whatsapp" className={style.social}>
+        <a
+          href="https://whatsapp.com"
+          aria-label="Whatsapp"
+          className={style.social}
+        >
           <WhatsappIcon />
         </a>
       </div>

@@ -5,6 +5,7 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   max-height: 150px;
   margin-top: auto;
 
@@ -20,6 +21,11 @@
       color: var(--colorBlack);
       font-size: 17px;
       font-weight: 400;
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: var(--grayColor);
+      }
     }
 
     .footer__links {
@@ -54,6 +60,11 @@
             color: var(--primaryColor);
             cursor: pointer;
             background-color: transparent;
+            transition: color 0.4s ease;
+
+            &:hover {
+              color: var(--grayColor);
+            }
           }
 
           .active {
@@ -73,6 +84,11 @@
       height: 31px;
       width: 31px;
       color: var(--primaryColor);
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: var(--grayColor);
+      }
     }
   }
 }

@@ -84,6 +84,11 @@
         font-size: 17px;
         font-weight: 600;
         cursor: pointer;
+        transition: color 0.4s ease;
+
+        &:hover {
+          color: var(--grayColor);
+        }
       }
     }
   }
