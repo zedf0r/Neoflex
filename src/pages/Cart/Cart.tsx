@@ -6,7 +6,7 @@ const Cart = () => {
   const { cart } = useCart();
 
   return (
-    <section>
+    <section className={style.cart}>
       <h2 className={style.cart__title}>Корзина</h2>
       <div className={style.cart__details}>
         <div className={style.cart__list}>
