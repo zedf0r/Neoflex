@@ -1,0 +1,16 @@
+.catalog {
+  padding: 28px 0 20px;
+
+  .catalog__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--grayColor);
+    margin-bottom: 20px;
+  }
+
+  .headphones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

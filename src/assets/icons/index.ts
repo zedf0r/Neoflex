@@ -4,3 +4,4 @@ export { WorldIcon } from "./WorldIcon";
 export { TelegramIcon } from "./TelegramIcon";
 export { VkIcon } from "./VkIcon";
 export { WhatsappIcon } from "./WhatsappIcon";
+export { StarIcon } from "./StarIcon";

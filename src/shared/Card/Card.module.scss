@@ -1,0 +1,87 @@
+.card {
+  flex: 0 1 calc(33.333% - 20px);
+  padding: 25px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
+  background-color: var(--whiteColor);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+  .card__img {
+    max-width: 220px;
+    max-height: 240px;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .card__info {
+    flex: 0 1 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card__header {
+      display: flex;
+      justify-content: space-between;
+
+      .card__title {
+        font-weight: 600;
+        font-size: 17px;
+        color: #1c1c27;
+      }
+
+      .card__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card__price_new {
+          font-weight: 600;
+          font-size: 17px;
+          color: var(--secondaryColor);
+        }
+
+        .card__price_old {
+          font-weight: 600;
+          font-size: 13px;
+          text-decoration: line-through;
+          color: #ffce7f;
+        }
+      }
+    }
+
+    .card__action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card__rate {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .rate__icon {
+          width: 24px;
+          height: 22px;
+          color: #ffce7f;
+        }
+
+        .rate__text {
+          font-weight: 600;
+          font-size: 17px;
+          color: var(--grayColor);
+        }
+      }
+
+      .card__button {
+        background-color: transparent;
+        color: var(--blackColor);
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
