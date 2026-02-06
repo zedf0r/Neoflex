@@ -7,3 +7,4 @@ export { WhatsappIcon } from "./WhatsappIcon";
 export { StarIcon } from "./StarIcon";
 export { MinusIcon } from "./MinusIcon";
 export { PlusIcon } from "./PlusIcon";
+export { TrashIcon } from "./TrashIcon";

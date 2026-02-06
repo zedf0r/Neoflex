@@ -1,8 +1,14 @@
 import { StarIcon } from "@/assets/icons";
 import style from "./Card.module.scss";
-import type { TypeCardProps } from "@/types/card.type";
+import type { TypeCardProps } from "@/types/Card.type";
 
-export const Card = ({ card }: { card: TypeCardProps }) => {
+export const Card = ({
+  card,
+  onClick,
+}: {
+  card: TypeCardProps;
+  onClick: (card: TypeCardProps) => void;
+}) => {
   return (
     <article className={style.card}>
       <div className={style.card__img}>
@@ -29,7 +35,11 @@ export const Card = ({ card }: { card: TypeCardProps }) => {
             </div>
             <span className={style.rate__text}>{card.rate}</span>
           </div>
-          <button className={style.card__button} type="button">
+          <button
+            className={style.card__button}
+            onClick={() => onClick(card)}
+            type="button"
+          >
             Купить
           </button>
         </div>

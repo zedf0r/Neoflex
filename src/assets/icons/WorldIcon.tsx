@@ -7,7 +7,7 @@ export const WorldIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_2_188)">
+      <g clipPath="url(#clip0_2_188)">
         <path
           d="M1.66666 9.99996C1.66666 14.6025 5.3975 18.3333 10 18.3333C14.6025 18.3333 18.3333 14.6025 18.3333 9.99996C18.3333 5.39746 14.6025 1.66663 10 1.66663C5.3975 1.66663 1.66666 5.39746 1.66666 9.99996Z"
           stroke="currentColor"

@@ -1,21 +1,20 @@
 import { CartAside, CartItem } from "@/shared";
 import style from "./Cart.module.scss";
-import wirelessAirpods from "@/assets/images/wireless_airpods.png";
+import { useCart } from "@/app/providers/cart/useCart";
 
 const Cart = () => {
-  const item = {
-    img: wirelessAirpods,
-    title: "Apple AirPods",
-    price: 9527,
-    rate: 4.7,
-  };
+  const { cart } = useCart();
 
   return (
     <section>
       <h2 className={style.cart__title}>Корзина</h2>
       <div className={style.cart__details}>
-        <CartItem card={item} />
-        <CartAside price={1231} />
+        <div className={style.cart__list}>
+          {cart.map((card) => (
+            <CartItem key={card.id} card={card} />
+          ))}
+        </div>
+        <CartAside />
       </div>
     </section>
   );

@@ -9,4 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  column-gap: 30px;
+
+  .cart__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    flex: 0 1 100%;
+    max-width: 633px;
+  }
 }
