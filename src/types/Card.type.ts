@@ -6,3 +6,5 @@ export type TypeCardProps = {
   oldPrice?: number;
   rate: number;
 };
+
+export type TypeCart = TypeCardProps & { quantity: number };

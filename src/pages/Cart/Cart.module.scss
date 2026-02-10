@@ -21,5 +21,11 @@
       flex: 0 1 100%;
       max-width: 633px;
     }
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      align-items: normal;
+      row-gap: 30px;
+    }
   }
 }

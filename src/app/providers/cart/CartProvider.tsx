@@ -1,8 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
-import type { TypeCardProps } from "@/types/Card.type";
 import { CartContext } from "@/app/providers/cart/CartContext";
-
-type TypeCart = TypeCardProps & { quantity: number };
+import type { TypeCart } from "@/types/Card.type";
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<TypeCart[]>(() => {
